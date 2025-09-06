@@ -1,0 +1,38 @@
+# CSC 210 Data Structures
+## Homework 0 Checklist
+
+Listed below are various aspects of the assignment.  When you turn in
+your work, please indicate the status of each item
+
+- YES: indicates that the item is fully complete
+- NO: indicates that the item is not attempted
+- PART: indicates that the item is attempted but not fully complete
+
+
+Assignment Points:
+
+_____ 1 pt: Submission includes readme.txt
+
+_____ 1 pt: IndexAccess class includes Javadoc describing its purpose
+
+_____ 1 pt: Javadoc specifies assumptions about how IndexAccess object is created
+
+_____ 1 pt: Correct call signatures for all the necessary IndexAccess methods
+
+_____ 1 pt: Javadoc included for all IndexAccess methods describes what they do and any restrictions on their use
+
+_____ 1 pt: Methods that might throw an exception are identified in Javadoc
+
+_____ 1 pt: Tests cover all IndexAccess methods
+
+_____ 1 pt: Tests check all exceptional cases
+
+_____ 1 pt: SequenceADT includes methods with call signatures of various types
+
+_____ 1 pt: SequenceADT class and methods all have Javadoc describing their purpose
+
+
+Kudos:
+
+_____ Implement code to test your IndexAccess interface
+
