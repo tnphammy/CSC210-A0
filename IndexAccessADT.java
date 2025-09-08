@@ -1,10 +1,15 @@
 /** Interface to describe the operations supported directly 
- * by the built-in array.*/
+ * by the built-in array.
+ * Arguments for building an IndexAccess Object:
+ * public int length;
+ * public T dataType; //int[], char[], etc.
+ * */
 interface IndexAccessADT<T> {
     /**
      * Print a String representation of an array
      * @param arrayT The array to be represented
      * @return The array as a String
+     * Throws NegativeArraySizeException if length of array is < 0
      */
     public String toString(T arrayT);
 
@@ -32,6 +37,8 @@ interface IndexAccessADT<T> {
      * @param start The index of the first position of the range to fill in (Inclusive)
      * @param end The index of the last position of the range to fill in (Exclusive)
      * @param value The value used to fill in
+     * Throws IllegalArgumentException if start index < end index
+     * Throws ArrayIndexOutOfBoundsException if either index is not within the array
      */
     public void fill(T arrayT, int start, int end, T value);
 
@@ -61,6 +68,8 @@ interface IndexAccessADT<T> {
      * @param arrayT The array to be modified
      * @param start The index of the first position of the range to fill in (Inclusive)
      * @param end The index of the last position of the range to fill in (Exclusive)
+     * * Throws IllegalArgumentException if start index < end index
+     * Throws ArrayIndexOutOfBoundsException if either index is not within the array
      */
     public void sort(T arrayT, int start, int end);
 }
