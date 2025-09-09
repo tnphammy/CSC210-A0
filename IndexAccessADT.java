@@ -4,13 +4,13 @@
  * 
  * Arguments for building an IndexAccess Object:
  * public int length;
- * public T dataType; //int[], char[], etc.
+ * public T dataType; (such as: int[], char[], etc.)
  */
 interface IndexAccessADT<T> {
     /**
      * Print a String representation of an array
      * @return The array as a String
-     * @throws NegativeArraySizeException if length of array is < 0
+     * @throws NegativeArraySizeException if length of array is negative
      */
     public String toString() throws NegativeArraySizeException;
 

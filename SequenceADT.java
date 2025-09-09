@@ -1,14 +1,18 @@
+
+/* Interface shows the operations one could do with a sequence, a sequence with
+an index, and two sequences 
+ * 
+ * Arguments for building an Sequence Object:
+ * public int length;
+ * public T dataType; (such as: int[], char[], etc.)
+*/
 interface SequenceADT<T> {
-    /*
-     * Interface shows the operations one could do with a sequence, a sequence with
-     * an index, and two sequences
-     */
 
     /* 1. A Sequence Alone */
     /**
      * Print a String representation of an sequence
      * @return The sequence as a String
-     * @throws NegativeArraySizeException if length of sequence is < 0
+     * @throws NegativeArraySizeException if length of sequence is negative
      */
     public String toString() throws NegativeArraySizeException;
 
@@ -48,7 +52,7 @@ interface SequenceADT<T> {
      * @param arrayT The sequence to be modified
      * @param start The index of the first position of the range to fill in (Inclusive)
      * @param end The index of the last position of the range to fill in (Exclusive)
-     * @throws IllegalArgumentException if start index < end index
+     * @throws IllegalArgumentException if start index is larger than end index
      * @throws ArrayIndexOutOfBoundsException if either index is not within the sequence
      */
     public void sort(T arrayT, int start, int end) throws IllegalArgumentException, ArrayIndexOutOfBoundsException;
@@ -58,9 +62,7 @@ interface SequenceADT<T> {
      * Compares two sequences
      * @param array1 The first sequence
      * @param array2 The second sequence
-     * @return 0 if two arrays are equal;
-     * @return a negative integer if the array1 is less than array2 lexicographically
-     * @return a positive integer if array1 is greater than array2 lexicographically.
+     * @return 0 if two arrays are equal / a negative integer if the array1 is smaller than array2 lexicographically / a positive integer if array1 is greater than array2 lexicographically.
      */
     public int compare(T array1, T array2);
 
