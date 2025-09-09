@@ -7,7 +7,6 @@ an index, and two sequences
  * public T dataType; (such as: int[], char[], etc.)
 */
 interface SequenceADT<T> {
-
     /* 1. A Sequence Alone */
     /**
      * Print a String representation of an sequence
