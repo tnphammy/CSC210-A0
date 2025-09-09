@@ -1,5 +1,5 @@
 
-/* Interface shows the operations one could do with a sequence, a sequence with
+/** Interface shows the operations one could do with a sequence, a sequence with
 an index, and two sequences 
  * 
  * Arguments for building an Sequence Object:
