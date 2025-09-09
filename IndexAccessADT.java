@@ -104,8 +104,8 @@ interface IndexAccessADT<T> {
      * Call: myArray.getIndex(1000)
      * -> Expected return: -1
      * 
-     * e) getLength()
-     * Call: myArray.getLength()
+     * e) getArrayLength()
+     * Call: myArray.getArrayLength()
      * -> Expected return: 5 (should be the same as the number between square brackets when declaring)
      * 
      */
