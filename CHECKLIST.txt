@@ -17,22 +17,22 @@ YES 1 pt: IndexAccess class includes Javadoc describing its purpose
 
 YES 1 pt: Javadoc specifies assumptions about how IndexAccess object is created
 
-_____ 1 pt: Correct call signatures for all the necessary IndexAccess methods
+YES 1 pt: Correct call signatures for all the necessary IndexAccess methods
 
 YES 1 pt: Javadoc included for all IndexAccess methods describes what they do and any restrictions on their use
 
 YES 1 pt: Methods that might throw an exception are identified in Javadoc
 
-_____ 1 pt: Tests cover all IndexAccess methods
+YES 1 pt: Tests cover all IndexAccess methods
 
-_____ 1 pt: Tests check all exceptional cases
+YES 1 pt: Tests check all exceptional cases
 
-_____ 1 pt: SequenceADT includes methods with call signatures of various types
+YES 1 pt: SequenceADT includes methods with call signatures of various types
 
-_____ 1 pt: SequenceADT class and methods all have Javadoc describing their purpose
+YES 1 pt: SequenceADT class and methods all have Javadoc describing their purpose
 
 
 Kudos:
 
-_____ Implement code to test your IndexAccess interface
+NO Implement code to test your IndexAccess interface
 
